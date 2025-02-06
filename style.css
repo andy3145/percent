@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', Montserrat; /* Change to your desired font */
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -18,22 +18,8 @@ body {
   flex-direction: column;
 }
 
-/* Header Styling */
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
-}
-
-/* Main Content Styling */
-main {
+/* Calculator Container */
+.calculator-container {
   width: 100%;
   max-width: 800px;
   padding: 20px;
