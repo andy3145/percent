@@ -3,33 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Percentage Calculator</title>
+  <title>Enhanced Percentage Calculators</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Percentage Calculator</h1>
-    <p>Calculate percentages easily and efficiently.</p>
+    <h1>Enhanced Percentage Calculators</h1>
+    <p>Choose a calculator below to perform your percentage calculations.</p>
   </header>
 
   <main>
-    <section class="calculator">
-      <h2>Calculate Your Percentage</h2>
-      <form id="calculatorForm">
-        <label for="totalAmount">Total Amount:</label>
-        <input type="number" id="totalAmount" name="totalAmount" placeholder="Enter total amount" required>
+    <section class="calculator" id="calculator1">
+      <h2>Original Percentage Calculator</h2>
+      <form id="calculatorForm1">
+        <label for="totalAmount1">Total Amount:</label>
+        <input type="number" id="totalAmount1" name="totalAmount1" placeholder="Enter total amount" required>
 
-        <label for="percentage">Percentage (%):</label>
-        <input type="number" id="percentage" name="percentage" placeholder="Enter percentage" required>
+        <label for="percentage1">Percentage (%):</label>
+        <input type="number" id="percentage1" name="percentage1" placeholder="Enter percentage" required>
 
-        <button type="submit">Calculate</button>
+        <div id="result1">Result: $0.00</div>
       </form>
-      <div id="result"></div>
+    </section>
+
+    <section class="calculator" id="calculator2">
+      <h2>"X is what percent of Y?" Calculator</h2>
+      <form id="calculatorForm2">
+        <label for="part">Part:</label>
+        <input type="number" id="part" name="part" placeholder="Enter part value" required>
+
+        <label for="whole">Whole:</label>
+        <input type="number" id="whole" name="whole" placeholder="Enter whole value" required>
+
+        <div id="result2">Result: 0%</div>
+      </form>
+    </section>
+
+    <section class="calculator" id="calculator3">
+      <h2>Percentage Increase/Decrease Calculator</h2>
+      <form id="calculatorForm3">
+        <label for="originalValue">Original Value:</label>
+        <input type="number" id="originalValue" name="originalValue" placeholder="Enter original value" required>
+
+        <label for="newValue">New Value:</label>
+        <input type="number" id="newValue" name="newValue" placeholder="Enter new value" required>
+
+        <div id="result3">Result: 0%</div>
+      </form>
+    </section>
+
+    <section class="tooltip">
+      <p><strong>Quick Tip:</strong> Use these calculators to quickly compute percentages, determine percentage increases or decreases, and find out what percentage one number is of another.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; Enjoy this free Percent Calculator!</p>
+    <p>&copy; All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
