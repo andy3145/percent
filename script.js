@@ -23,6 +23,11 @@ document.getElementById('calculatorForm2').addEventListener('input', function() 
   }
 
   const result = (part / whole) * 100;
-  document.getElementById('result2').text
+  document.getElementById('result2').textContent = `Result: ${result.toFixed(2)}%`;
+});
+
+// Percentage Increase/Decrease Calculator
+document.getElementById('calculatorForm3').addEventListener('input', function() {
+ 
 ::contentReference[oaicite:0]{index=0}
  
