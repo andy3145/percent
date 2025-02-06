@@ -1,69 +1,103 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header Styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Main Content Styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* Calculator Section Styling */
 .calculator {
-    background: linear-gradient(135deg, #ffffff, #f0f0f0);
-    border: 2px solid #cccccc;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
-.calculator:hover {
-    transform: scale(1.05);
+.calculator h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #333333;
+.calculator label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
+.calculator input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
 }
 
-input:focus {
-    border-color: #4CAF50;
-    outline: none;
+.calculator button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+.calculator button:hover {
+  background-color: #45a049;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
+/* Result Styling */
 #result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #333333;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
