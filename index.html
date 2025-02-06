@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <h1>Percentage Calculator</h1>
-        <input type="number" id="number1" placeholder="Enter number 1" aria-label="Enter number 1">
-        <input type="number" id="number2" placeholder="Enter number 2" aria-label="Enter number 2">
-        <button onclick="calculatePercentage()">Calculate</button>
-        <p id="result"></p>
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <h1>Percentage Calculator</h1>
+    <p>Calculate percentages easily and efficiently.</p>
+  </header>
+
+  <main>
+    <section class="calculator">
+      <h2>Calculate Your Percentage</h2>
+      <form id="calculatorForm">
+        <label for="totalAmount">Total Amount:</label>
+        <input type="number" id="totalAmount" name="totalAmount" placeholder="Enter total amount" required>
+
+        <label for="percentage">Percentage (%):</label>
+        <input type="number" id="percentage" name="percentage" placeholder="Enter percentage" required>
+
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Enjoy this free Percent Calculator!</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
